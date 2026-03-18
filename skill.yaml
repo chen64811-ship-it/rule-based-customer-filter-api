@@ -1,0 +1,17 @@
+eligibility:
+  conditions:
+    - field: business_years
+      operator: ">="
+      value: 2
+    - field: monthly_revenue
+      operator: ">="
+      value: 200000
+# skill.yaml - 客户筛选规则配置
+filter_rules:
+  - field: "business_years"    # 筛选字段：经营年限
+    operator: ">="             # 运算符：大于等于
+    value: 2                   # 阈值：2年
+  - field: "monthly_revenue"   # 筛选字段：月营收
+    operator: ">="             # 运算符：大于等于
+    value: 200000              # 阈值：20万
+  - logic: "AND"               # 多规则逻辑：AND（同时满足）/ OR（满足其一）
