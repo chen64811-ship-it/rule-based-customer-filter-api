@@ -1,3 +1,24 @@
+# Rule-Based Customer Filtering API (AI Agent Style)
+
+A production-style rule engine system for customer eligibility filtering, built with FastAPI and YAML-driven configuration.
+
+Supports:
+
+* Config-driven rules (YAML)
+* Explainable filtering results
+* API-based invocation (Agent-ready tool)
+Architecture
+
+Client Request
+↓
+FastAPI (/filter)
+↓
+Load Rules (skill.yaml)
+↓
+Rule Engine (matcher.py)
+↓
+Return Results (matched / unmatched + reasons)
+
 markdown
 # Customer Filter AI Agent
 📌 基于规则引擎的客户筛选系统，YAML配置驱动 + FastAPI接口化。
